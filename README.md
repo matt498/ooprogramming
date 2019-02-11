@@ -4,7 +4,7 @@ This is an intermediate programming course about the Object Oriented methodology
 ## How to use it ##
 The whole material, comprising slides and code examples, can be downloaded using git:
 
-* $ git clone https://agresearch@bitbucket.org/agr_unimore/ooprogramming.git
+* $ git clone https://github.com/nbicocchi/ooprogramming.git
 
 Both slides and code examples might be updated or bug-fixed during the course. At any time, for downloading the
 latest version, go the course material directory (on your pc) and use:
@@ -138,3 +138,8 @@ In the following there is list of good books to be used during the development, 
 * https://www.w3resource.com/java-tutorial/
 
 * https://www.w3resource.com/java-exercises/
+
+* https://github.com/mtdvio/every-programmer-should-know
+
+* https://github.com/sindresorhus/awesome-scifi
+
