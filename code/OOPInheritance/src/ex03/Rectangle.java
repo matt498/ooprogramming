@@ -6,6 +6,8 @@ public class Rectangle extends Shape {
 	
 	public Rectangle() {
 		super();
+		this.width = 10;
+		this.heigth = 10;
 	}	
 	
 	public Rectangle(double width, double heigth) {
