@@ -141,5 +141,7 @@ In the following there is list of good books to be used during the development, 
 
 * https://github.com/mtdvio/every-programmer-should-know
 
+* https://github.com/charlax/professional-programming
+
 * https://github.com/sindresorhus/awesome
 
