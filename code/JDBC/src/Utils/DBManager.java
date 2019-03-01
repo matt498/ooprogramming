@@ -16,7 +16,7 @@ public class DBManager {
 
 	protected Statement statement;
 	protected Connection connection;
-	
+
 	public DBManager(String JDBCDriver, String JDBCURL) throws ClassNotFoundException, SQLException {
 		Class.forName(JDBCDriver);
 		connection = DriverManager.getConnection(JDBCURL);
@@ -33,7 +33,7 @@ public class DBManager {
 		statement.setQueryTimeout(30); 
 		showMetadata();
 	}
-	
+
 	public void showMetadata() throws SQLException {
 		DatabaseMetaData md = connection.getMetaData();
 
