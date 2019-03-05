@@ -17,5 +17,6 @@ public class ex19 {
 			}
 		}
 		System.out.println("Equal");
+		System.exit(0);
 	}
 }
