@@ -1,7 +1,7 @@
 package ex01;
 
 public class StringProcessor {
-	public int findShortest(String[] v) {	
+	public int findShortest(String[] v) {
 		int min_pos = 0;
 		int min_length = 128;
 		for (int i = 0; i < v.length; i++) {
@@ -17,7 +17,8 @@ public class StringProcessor {
 		int i;
 
 		for (i = 0; i < v.length; i++) {
-			if (v[i].equals(key)) return i;
+			if (v[i].equals(key))
+				return i;
 		}
 
 		return -1;
@@ -26,8 +27,8 @@ public class StringProcessor {
 	public void reverse(String[] v) {
 		for (int i = 0; i < v.length / 2; i++) {
 			String tmp = v[i];
-			v[i] = v[v.length-1-i];
-			v[v.length-1-i] = tmp;
+			v[i] = v[v.length - 1 - i];
+			v[v.length - 1 - i] = tmp;
 		}
 	}
 
@@ -36,7 +37,7 @@ public class StringProcessor {
 		int dups_index = 0;
 		for (int j = 0; j < v.length / 2; j++) {
 			for (int i = 0; i < v.length; i++) {
-				if (i != j && v[i].equals(v[j])) { 
+				if (i != j && v[i].equals(v[j])) {
 					dups[dups_index++] = i;
 					dups[dups_index++] = j;
 				}
@@ -44,7 +45,7 @@ public class StringProcessor {
 		}
 		return dups;
 	}
-	
+
 	public boolean areEqual(String[] v1, String[] v2) {
 		if (v1.length != v2.length) {
 			return false;
@@ -58,23 +59,23 @@ public class StringProcessor {
 	}
 
 	public static void main(String[] args) {
-		String[] v1 = {"Nicola", "Marzia", "Agata", "Dharma"};
-		String[] v2 = {"Nicola", "Marzia", "Agata", "Dharma"};
+		String[] v1 = { "Nicola", "Marzia", "Agata", "Dharma" };
+		String[] v2 = { "Nicola", "Marzia", "Agata", "Dharma" };
 		StringProcessor sp = new StringProcessor();
-		
+
 		System.out.println(sp.findShortest(v1));
 		System.out.println(sp.search(v1, "Marzia"));
-		
+
 		sp.reverse(v1);
 		for (String s : v1) {
 			System.out.println(s);
 		}
-		
+
 		for (int i : sp.findDuplicates(v1)) {
-			System.out.print(i + ", ");	
+			System.out.print(i + ", ");
 		}
 		System.out.println();
-		
+
 		// False because the array has been reversed
 		System.out.println(sp.areEqual(v1, v2));
 	}
